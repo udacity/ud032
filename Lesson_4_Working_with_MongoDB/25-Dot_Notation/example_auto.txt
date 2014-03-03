@@ -1,0 +1,14 @@
+{
+	"_id" : ObjectId("52fd438b5a98d65507d288cf"),
+	"engine" : "Crawler-transporter__1",
+	"dimensions" : {
+		"width" : 34.7472,
+		"length" : 39.9288,
+		"weight" : 2721000
+	},
+	"transmission" : "16 traction motors powered by four  generators",
+	"modelYears" : [ ],
+	"productionYears" : [ ],
+	"manufacturer" : "Marion Power Shovel Company",
+	"name" : "Crawler-transporter"
+}

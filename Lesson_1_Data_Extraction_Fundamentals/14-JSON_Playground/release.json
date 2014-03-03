@@ -1,0 +1,31 @@
+{
+  "barcode": null,
+  "country": "GB",
+  "date": "1969",
+  "disambiguation": "",
+  "id": "0b44cb36-550a-491d-bfd9-8751271f9de7",
+  "packaging": null,
+  "quality": "normal",
+  "release-events": [
+    {
+      "area": {
+        "disambiguation": "",
+        "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+        "iso_3166_1_codes": [
+          "GB"
+        ],
+        "iso_3166_2_codes": [],
+        "iso_3166_3_codes": [],
+        "name": "United Kingdom",
+        "sort-name": "United Kingdom"
+      },
+      "date": "1969"
+    }
+  ],
+  "status": "Official",
+  "text-representation": {
+    "language": "eng",
+    "script": "Latn"
+  },
+  "title": "To Markos III"
+}

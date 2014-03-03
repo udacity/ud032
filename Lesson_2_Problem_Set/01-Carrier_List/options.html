@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>
+	Data Elements
+</title>
+    
+    <script type="text/javascript" src="lib/topNavBar.js"></script>
+	<script type="text/javascript" src="lib/no_ms.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" /><link href="styles/global.css" REL="stylesheet" TYPE="text/css" /><link rel="stylesheet" type="text/css" href="styles/local_Top_nav_main.css" /><link rel="stylesheet" type="text/css" href="styles/rita_main.css" />
+
+<script language="javascript" type="text/javascript">
+function window_CarrierList(page)
+{
+    //aUrl="CarrierList.asp?xpage=" + xPage + "&flag=" + flag;
+    aUrl="CarrierList.aspx?page=" + page;
+  
+	windef="Height=750,width=600,Left=0,Top=0,dependent=yes,resizable=Yes, scrollbars=yes";
+    objWindow = window.open("","Subwindow", windef);
+	objWindow.location.href=aUrl;
+	objWindow.focus();
+
+}
+
+function window_CarrierList_Foreign()
+{
+    //aUrl="CarrierList.asp?xpage=" + xPage + "&flag=" + flag;
+    aUrl="CarrierList_Foreign.aspx";
+  
+	windef="Height=700,width=580,Left=0,Top=0,dependent=yes,resizable=Yes, scrollbars=yes";
+    objWindow = window.open("","Subwindow", windef);
+	objWindow.location.href=aUrl;
+	objWindow.focus();
+
+}
+</script>
+
+<script type="text/javascript" src="js/dot_analytics.js"></script>
+
+</head>
+
+
+
+
+
+<body >
+<!-- start of main table hosting everything -->
+
+
+<!-- table 1 hosting top banner -->
+<div id="majorContainer">
+<div id="outerContainer">
+
+<div id="banner">
+ <div id="bannerContainer"><map name="rita" id="rita">
+  <area shape="rect" coords="4,2,26,6"  href="#Skip_to_content" alt="Skip to Content" />
+  <area shape="rect" coords="30,2,52,6" href="#search" alt="Skip to Search" />
+  <area shape="rect" coords="6,8,60,60" href="http://www.dot.gov/" alt="U.S. Department of Transportation" />
+  <area shape="poly" coords="110,9,554,12,555,31,232,30,234,55,110,56" href="http://www.rita.dot.gov" alt="Research and Innovative Technology Administration" />
+  </map><img src="images/top_bts_banner.jpg" alt="Bureau of Transportation Statistics" width="560" height="68" border="0" usemap="#rita" />
+ </div>
+
+ <div id="ritaTopLinks">
+   <a href="http://www.rita.dot.gov/about_rita/">About RITA</a> |
+   <a href="http://www.rita.dot.gov/press_room/index.html">Press Room</a> |
+   <a href="http://www.rita.dot.gov/offices/">Offices</a> |
+   <a href="http://www.rita.dot.gov/careers.html">Jobs</a> |
+   <a href="http://www.rita.dot.gov/photos_and_video/">Photos &amp; Video</a> |
+   <a href="http://www.rita.dot.gov/contacts/">Contact Us</a>
+ </div>
+
+ <div id="searchContainer">
+   <form name="cn" action="http://search.google.dot.gov/RITA/RITASearchProcess.asp">
+     <a id="search" name="search"></a>
+     <input type="hidden" name="site" value="RITA_Pages" />
+     <input type="hidden" name="client" value="BTS_frontend" />
+     <input type="hidden" name="ie" value="" />
+     <input type="hidden" name="output" value="xml_no_dtd" />
+     <input type="hidden" name="lr" value="" />
+     <input type="hidden" name="proxystylesheet" value="BTS_frontend" />
+     <input type="hidden" name="oe" value="" />
+     <input type="text" id="q" name="q" maxlength="100" size="22" title="Type your search here" class="text" />
+     <input type="submit" value="Search" />
+     <input type="hidden" name="rita_only" value="1" />
+    </form>
+ </div>
+</div>
+
+<div id="mainContentContainer">
+
+<div id="topnav">
+  <div class="topNavBarRita">
+    <div class="topNavigationLocalGreen">
+
+    <ul id="local1">
+         <li><a href="http://www.bts.gov/about/">About BTS</a>
+           <ul>
+            <li><a href="http://www.bts.gov/programs/advisory_council_on_transportation_statistics/">Advisory Council on Transportation Statistics</a></li>
+            <li><a href="http://www.bts.gov/about/bts_jobs_and_internships.html">BTS Job Vacancies and Internships</a></li>
+			<li><a href="http://www.bts.gov/programs/confidentiality_policy/">Confidentiality Policy</a></li>
+            <li><a href="http://www.rita.dot.gov/events/">Events</a></li>
+            <li><a href="http://www.bts.gov/laws_and_regulations/">Laws and Regulations</a></li>
+            <li><a href="http://www.bts.gov/about/org_chart.html">Organizational Chart</a></li>
+            <li><a href="http://www.bts.gov/publications/significant_accomplishments/2009/">Results</a></li>
+            <li><a href="http://www.bts.gov/programs/statistical_policy_and_research/">Statistical Policy and Research</a></li>
+           </ul></li>
+       </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local2">
+        <li><a href="http://www.bts.gov/press_room/">BTS Press Room</a>
+          <ul>
+            <li><a href="http://www.bts.gov/press_releases/">Press Releases</a></li>
+            <li><a href="http://www.bts.gov/upcoming_data_releases/">Upcoming Press Releases</a></li>
+            <li><a href="http://www.bts.gov/whatsnew/">What's New</a></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local3">
+        <li><a href="http://www.bts.gov/data_and_statistics/">Data and Statistics</a>
+          <ul>
+            <li><a href="http://www.bts.gov/xml/air_traffic/src/index.xml#CustomizeTable">Airline Traffic Data</a></li>
+            <li><a href="http://www.bts.gov/xml/atpi/src/index.xml">Air Fares Data</a></li>
+            <li><a href="http://www.bts.gov/xml/ontimesummarystatistics/src/index.xml">Airline On-Time Data</a></li>
+            <li><a href="http://www.bts.gov/programs/international/transborder/TBDR_BC/TBDR_BC_Index.html">Border Crossing/Entry Data</a></li>
+            <li><a href="http://www.bts.gov/publications/commodity_flow_survey/">Commodity Flow Survey</a></li>
+            <li><a href="http://www.bts.gov/programs/freight_transportation/">Freight Data and Statistics</a></li>
+            <li><a href="http://www.transtats.bts.gov/DatabaseInfo.asp?DB_ID=640&amp;Link=0">Intermodal Passenger Connectivity Database</a></li>
+            <li><a href="http://www.bts.gov/data_and_statistics/international_data/index.html">International Data</a></li>
+            <li><a href="http://www.bts.gov/programs/ncfo/">National Census of Ferry Operators</a></li>
+            <li><a href="http://www.bts.gov/programs/international/transborder/TBDR_QA.html">North American Transborder Freight</a></li>
+            <li><a href="http://www.transtats.bts.gov/">TranStats</a></li>
+            <li><a href="http://www.bts.gov/data_and_statistics/">Other Data and Statistics</a></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local4">
+        <li><a href="http://www.bts.gov/publications/">Publications</a>
+          <ul>
+            <li><a href="http://www.bts.gov/pdc/index.xml">Order a Print Publication</a></li>
+            <li><a href="http://www.bts.gov/pdc/user/products/src/category.xml?pdc_start=1&pdc_end=15&pdc_page=1&c=1&pdc_sort=2+DESC%2C+4+DESC">Aviation and Airline Reports</a></li>
+            <li><a href="http://ntl.bts.gov/">National Transportation Library (NTL)</a></li>
+            <li><a href="http://www.bts.gov/publications/research_papers/">Research Papers</a></li>
+            <li><a href="http://www.bts.gov/publications/special_reports_and_issue_briefs/">Special Reports/Issue Briefs</a></li>
+            <li><a href="http://www.bts.gov/programs/survey_results/index.html">Survey Results</a></li>
+            <li><a href="http://www.bts.gov/publications/bts_technical_report/">Technical Reports</a></li>
+            <li><a href="http://www.bts.gov/publications/bts_transportation_trends_in_focus/">Transportation Trends in Focus</a></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local5">
+        <li><a href="http://www.bts.gov/programs/">Subject Areas</a>
+          <ul>
+            <li><a href="http://www.bts.gov/programs/airline_information/">Aviation and Airline Data</a></li>
+            <li><a href="http://www.bts.gov/programs/congestion/index.html">Congestion</a></li>
+            <li><a href="http://www.bts.gov/programs/connectivity/index.html">Connectivity</a></li>
+            <li><a href="http://www.bts.gov/programs/economics_and_finance/">Economics and Finance</a></li>
+            <li><a href="http://www.bts.gov/programs/energy_and_environment/index.html">Energy and Environment</a></li>
+            <li><a href="http://www.bts.gov/programs/freight_transportation/">Freight Information</a></li>
+            <li><a href="http://www.bts.gov/programs/geographic_information_services/">Geographic Information</a></li>
+            <li><a href="http://www.bts.gov/programs/international/">International</a></li>
+            <li><a href="http://www.bts.gov/programs/livability/index.html">Livability</a></li>
+            <li><a href="http://www.bts.gov/programs/maritime_program/">Maritime Program</a></li>
+            <li><a href="http://www.bts.gov/programs/passenger_travel/index.html">Passenger Travel</a></li>
+            <li><a href="http://www.bts.gov/programs/safety/index.html">Safety</a></li>
+            <li><a href="http://www.bts.gov/programs/trending_and_forecasting/index.html">Trending and Forecasting</a></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local6">
+        <li><a href="http://www.bts.gov/external_links/">External Links</a>
+          <ul>
+            <li><a href="http://www.apta.com/resources/statistics/Pages/default.aspx" title="You Are Leaving DOT">American Public Transportation Association</a></li>
+            <li><a href="http://www.aar.org/" title="You Are Leaving DOT">Association of American Railroads</a></li>
+            <li><a href="http://www.fhwa.dot.gov/pubstats.html">Federal Highway Administration Publications and Statistics</a></li>
+            <li><a href="http://www.census.gov/population/www/socdemo/journey.html" title="You Are Leaving DOT">Journey to Work (Census Bureau)</a></li>
+            <li><a href="http://www.internationaltransportforum.org/home.html" title="You Are Leaving DOT">International Transport Forum</a></li>
+            <li><a href="http://marapps.dot.gov/mts/index.jsp">Marine Transportation System Data</a></li>
+            <li><a href="http://www.nhtsa.dot.gov/">National Highway Traffic Safety Administration </a></li>
+            <li><a href="http://www.ntdprogram.gov/ntdprogram/">Federal Transit Administration National Transit Database</a></li>
+            <li><a href="http://www.unece.org/trans/main/wp6/wp6.html" title="You Are Leaving DOT">United Nations Economic Commission for Europe Transport Data</a></li>
+            <li><a href="http://www.bts.gov/external_links/index.html#transportation">Transportation/ Government Websites</a></li>
+          </ul></li>
+      </ul>
+      </div>
+
+  </div>
+
+ <!-- nir <div class="topBcrumbs">&nbsp;</div>-->
+ <!-- <div class="topPrint"><img src="images/print_page.gif" alt="Print icon" border="0" onclick='javascript:window.open("Homepage.asp")'></div -->
+ <!--nir <div class="topPrint" style='font-size:10pt;'>&nbsp;<a href="http://www.rita.dot.gov">RITA</a> > <a href="http://www.bts.gov/">BTS</a></div>-->
+
+  <div class="topBcrumbs">&nbsp;<a href="http://www.rita.dot.gov">RITA</a> > <a href="http://www.rita.dot.gov/bts/">BTS</a></div>
+  <div class="topPrint"style='font-size:10pt;'>&nbsp;</div>
+
+ <div id="topGrayLine"></div>
+
+</div>
+
+<div id="topLeftGrayCorner" class="topCorners"></div><div id="topRightGrayCorner" class="topCorners"></div>
+
+<div id="content"><a name="Skip_to_content"></a>
+
+
+
+
+
+
+
+<table border = '0' width = '890px'><tr>
+
+<!--'First TD-->
+<td width ='136px' style='vertical-align:top;'>
+<table>
+<tr>
+	<td style='text-align:left;'>
+		<Table style="margin-right:3px;">
+<tr><td><a href="homepage.asp" ><img src="images/smalltop.gif" style="border:0px" alt="transtats logo" ></a></td></tr>
+	<FORM name='searchForm'  METHOD=POST ACTION='Search.asp'  >
+<TR><TD style='text-align:left;padding-left:10px;padding-top:2px;'><LABEL FOR='txtSearch'>
+		<a class=tsslcLbl style='color: #000000;text-decoration:none;' href='javascript:displayHelp(300,450,"SITESEARCH")'>Search this site:</a></LABEL></td></tr><tr><td style='padding-left:5px' nowrap>
+		<INPUT class=slcBox TYPE='text' name='txtSearch' id='txtSearch' size=16 style='width:110px;height:20;vertical-align:bottom;'>&nbsp;
+		<Button TYPE='submit'  style='font-size:6.5pt;height:20;width=24;vertical-align:middle;' >Go</button></td>
+</TR>	
+	</FORM>
+<TR>
+<TD nowrap style='text-align:left;padding-left:10px;padding-top:2px;'><a class='finePrint' href="SearchInfo.asp">Advanced Search</a></TD>
+</TR>
+<TR><TD class="hspacing"></TD></TR>
+<TD  class="sidebarTH">Resources</TD>
+</TR>
+<TR>
+<TD class="hspacing" style="background-color:#efefef;"></TD>
+</TR>
+<TR>
+<TD class="sidebarLink" onmouseover="toggleMenu(this,'Data Directory');return true;" 
+	onmouseout="toggleMenu(this,'');return true;"><A href="DataIndex.asp" style='color:#000000;text-decoration:none;'>Database Directory</A></TD>
+</TR>
+<TR>
+<TD class="sidebarLink"  onmouseover="toggleMenu(this,'Glossary');return true;" onmouseout="toggleMenu(this,' ');return true;"><A href='glossary.asp' style='color:#000000;text-decoration:none;'>Glossary</A></TD>
+</TR>
+<TR>
+<TD class="sidebarLink" onmouseover="toggleMenu(this,'What&#145;s New Page');return true;" onmouseout="toggleMenu(this,' ');return true;"><A href='http://www.bts.gov/upcoming_data_releases/' style='color:#000000;text-decoration:none;'>Upcoming Releases</A></TD>
+</TR>
+<TR>
+<TD class="sidebarLink" onmouseover="toggleMenu(this,'What&#145;s New Page');return true;" onmouseout="toggleMenu(this,' ');return true;"><A href='releaseinfo.asp' style='color:#000000;text-decoration:none;'>Data Release History</A></TD>
+</TR>
+<TR><TD class="hspacing"></TD></TR>
+<TR>
+<TD  class="sidebarTH">Data Finder</TD>
+</TR>
+<TR>
+<TD  class="sidebarTH2">By Mode</TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Aviation Mode');return true;" 
+onmouseout="window.status='';toggleMenu(this,'Aviation Mode');return true;"><A href="databases.asp?Mode_ID=1&Mode_Desc=Aviation&Subject_ID2=0" style='color:#000000;text-decoration:none;'>Aviation</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Maritime Mode');return true;" 
+onmouseout="toggleMenu(this,'Maritime Mode');return true;"><A href="databases.asp?Mode_ID=2&Mode_Desc=Maritime&Subject_ID2=0" style='color:#000000;text-decoration:none;'>Maritime</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Highway Mode');return true;" 
+	onmouseout="toggleMenu(this,'Highway Mode');return true;"><A href="databases.asp?Mode_ID=3&Mode_Desc=Highway&Subject_ID2=0" style='color:#000000;text-decoration:none;'>Highway</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Transit Mode');return true;" 
+	onmouseout="toggleMenu(this,'Transit Mode');return true;"><A href="databases.asp?Mode_ID=4&Mode_Desc=Transit&Subject_ID2=0" style='color:#000000;text-decoration:none;'>Transit</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Rail Mode');return true;" 
+	onmouseout="toggleMenu(this,'Rail Mode');return true;"><A href="databases.asp?Mode_ID=5&Mode_Desc=Rail&Subject_ID2=0" style='color:#000000;text-decoration:none;'>Rail</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Pipeline Mode');return true;"  
+	onmouseout="toggleMenu(this,'Pipeline Mode');return true;"><A href="databases.asp?Mode_ID=6&Mode_Desc=Pipeline&Subject_ID2=0" style='color:#000000;text-decoration:none;'>Pipeline</A></TD>
+</TR>
+<TR><TD class="sidebarLink" 
+	onmouseover="toggleMenu(this,'Bike/Pedestrian Mode');return true;" onmouseout="toggleMenu(this,'Bike/Pedestrian Mode');return true;"><A href="Databases.asp?Mode_ID=7&Mode_Desc=Bike/Pedestrian&Subject_ID2=0" style='color:#000000;text-decoration:none;'>Bike/Pedestrian</A></TD></TR>
+<TR><TD class="sidebarLink" 
+	onmouseover="toggleMenu(this,'Other Mode');return true;"  onmouseout="toggleMenu(this,'Other Mode');return true;" ><A href="Databases.asp?Mode_ID=99&Mode_Desc=Other&Subject_ID2=0" style='color:#000000;text-decoration:none;'>Other</A></TD>
+</TR>
+<TR>
+<TD  class="sidebarTH2">By Subject</TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Safety subject');return true;" 
+	onmouseout="toggleMenu(this,'');return true"><A href="databases.asp?Subject_ID=1&Subject_Desc=Safety&Mode_ID2=0" style='color:#000000;text-decoration:none;'>Safety</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Freight Transportation subject');return true;" 
+	onmouseout="toggleMenu(this,'');return true"><A href="databases.asp?Subject_ID=2&Subject_Desc=Freight%20Transport&Mode_ID2=0" style='color:#000000;text-decoration:none;'>Freight Transport</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Passenger Travel subject');return true;" 
+	onmouseout="toggleMenu(this,'');return true"><A href="databases.asp?Subject_ID=3&Subject_Desc=Passenger%20Travel&Mode_ID2=0" style='color:#000000;text-decoration:none;'>Passenger Travel</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Infrastructure subject');return true;" 
+	onmouseout="toggleMenu(this,'');return true"><A href="databases.asp?Subject_ID=4&Subject_Desc=Infrastructure&Mode_ID2=0" style='color:#000000;text-decoration:none;'>Infrastructure</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Economic/Financial subject');return true;" 
+	onmouseout="toggleMenu(this,'');return true"><A href="databases.asp?Subject_ID=5&Subject_Desc=Economic/Financial&Mode_ID2=0" style='color:#000000;text-decoration:none;'>Economic/Financial</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Social/Demographic subject');return true;" 
+	onmouseout="toggleMenu(this,'');return true"><A href="databases.asp?Subject_ID=6&Subject_Desc=Social/Demographic&Mode_ID2=0" style='color:#000000;text-decoration:none;'>Social/Demographic</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Energy subject');return true;" 
+	onmouseout="toggleMenu(this,'');return true"><A href="databases.asp?Subject_ID=7&Subject_Desc=Energy&Mode_ID2=0" style='color:#000000;text-decoration:none;'>Energy</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Environment subject');return true;" 
+	onmouseout="toggleMenu(this,'');return true"><A href="databases.asp?Subject_ID=8&Subject_Desc=Environment&Mode_ID2=0" style='color:#000000;text-decoration:none;'>Environment</A></TD>
+</TR>
+<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'National Security subject');return true;" 
+	onmouseout="toggleMenu(this,'');return true"><A href="databases.asp?Subject_ID=9&Subject_Desc=National%20Security&Mode_ID2=0" style='color:#000000;text-decoration:none;'>National Security</A></TD>
+</TR>
+<TR>
+<TD  class="hspacing" STYLE="background-color:#efefef;"></TD></TR>
+<TR>
+<TR>
+</TABLE>
+ 
+	</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+
+    <table  width='720px' style='margin-top:15px;'>
+        <tr><th  style="text-align:center;font-weight:800;font-size:16pt;font-family : arial; height: 26px;">
+            <span id="LblHeader" style="display:inline-block;width:720px;text-align:center;font-weight:800;font-size:16pt;font-family : arial;">Flights</span></th>
+            
+        </tr>
+		<tr><th  style='text-align:center;font-weight:800;font-size:16pt;font-family : arial;'>
+            <span id="LblSelection" style="display:inline-block;width:720px;text-align:center;font-weight:800;font-size:16pt;font-family : arial;">All Carriers - All Airports </span></th>
+            
+        </tr>
+        <tr><th  style='text-align:center;font-weight:800;font-size:12pt;font-family:arial;'></th></tr>
+    </table>
+    
+    <form name="form1" method="post" action="Data_Elements.aspx?Data=2" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTI4MzM2NTM3Mw8WDh4Hc3RyQ29ubgVaUHJvdmlkZXI9Lk5FVCBGcmFtZXdvcm" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWjAkC5fzrvQ4Clfa57AICjvDy6wsCs/yZsQgCstbN9wQCt9ap9wQC" />
+</div>
+    <table  width='720px' >
+             
+        <tr>
+            <td  class="dataTD" style="width: 450px" ><label for="CarrierList">
+                 Select a carrier from the dropdown (major carriers) or from a link below: </label>
+	        </td>
+            <td  class="dataTD" style="width: 250px" ><label for="AirportList">
+                  Select an airport: </label>
+	        </td>
+			<td></td>
+   	    </tr>  
+	    <tr>
+	        <td style="width: 450px">
+	            <select name="CarrierList" id="CarrierList" class="slcBox" style="width:450px;">
+	<option selected="selected" value="All">All U.S. and Foreign Carriers</option>
+	<option value="AllUS">All U.S. Carriers</option>
+	<option value="AllForeign">All Foreign Carriers</option>
+	<option value="FL">AirTran Airways</option>
+	<option value="AS">Alaska Airlines </option>
+	<option value="AA">American Airlines </option>
+	<option value="MQ">American Eagle Airlines </option>
+	<option value="5Y">Atlas Air </option>
+	<option value="DL">Delta Air Lines </option>
+	<option value="EV">ExpressJet Airlines </option>
+	<option value="F9">Frontier Airlines </option>
+	<option value="HA">Hawaiian Airlines </option>
+	<option value="B6">JetBlue Airways</option>
+	<option value="OO">SkyWest Airlines </option>
+	<option value="WN">Southwest Airlines </option>
+	<option value="NK">Spirit Air Lines</option>
+	<option value="US">US Airways </option>
+	<option value="UA">United Air Lines </option>
+	<option value="VX">Virgin America</option>
+
+</select>
+	        
+	        </td>
+	        
+	        <td style="width: 250px">
+	            <select name="AirportList" id="AirportList" class="slcBox" style="width:250px;">
+	<option selected="selected" value="All">All</option>
+	<option value="AllMajors">All Major Airports</option>
+	<option value="ATL"> - Atlanta, GA: Hartsfield-Jackson Atlanta International</option>
+	<option value="BWI"> - Baltimore, MD: Baltimore/Washington International Thurgood Marshall</option>
+	<option value="BOS"> - Boston, MA: Logan International</option>
+	<option value="CLT"> - Charlotte, NC: Charlotte Douglas International</option>
+	<option value="MDW"> - Chicago, IL: Chicago Midway International</option>
+	<option value="ORD"> - Chicago, IL: Chicago O'Hare International</option>
+	<option value="DFW"> - Dallas/Fort Worth, TX: Dallas/Fort Worth International</option>
+	<option value="DEN"> - Denver, CO: Denver International</option>
+	<option value="DTW"> - Detroit, MI: Detroit Metro Wayne County</option>
+	<option value="FLL"> - Fort Lauderdale, FL: Fort Lauderdale-Hollywood International</option>
+	<option value="IAH"> - Houston, TX: George Bush Intercontinental/Houston</option>
+	<option value="LAS"> - Las Vegas, NV: McCarran International</option>
+	<option value="LAX"> - Los Angeles, CA: Los Angeles International</option>
+  <option value="AllOthers">All Other Airports</option>
+  <option value="ABR"> - Aberdeen, SD: Aberdeen Regional</option>
+  <option value="ABI"> - Abilene, TX: Abilene Regional</option>
+</select>
+	        
+	        </td>
+	       
+	        <td>
+				<input type="submit" name="Submit" value="Submit" id="Submit" style="width:50px;" />
+	    
+	        </td>
+	    </tr>   
+	    <tr>
+			<td style="width: 450px; height: 15px;">
+				<a class="dataTD" style="font-size:9px;" href="javascript:window_CarrierList(1)" >U.S.
+                    Carriers ($20M revenue/yr)</a>
+                &nbsp; &nbsp;&nbsp;<a class="dataTDRight" style="font-size:9px;"href="javascript:window_CarrierList_Foreign()" >Foreign Carriers, 10,000 pax/mo to and from U.S.</a></td>
+			<td style="width: 250px; height: 15px;">
+				 <a id="Link_Origin" disabled="disabled" class="dataTD" style="display:inline-block;width:29px;font-size:9px;">Origin</a>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a id="Link_Destination" class="dataTDRight" href="javascript:__doPostBack('Link_Destination','')" style="display:inline-block;width:61px;font-size:9px;">Destination</a></td><td style="height: 15px">
+			</td>
+		</tr>
+		       
+     </table>
+     <table width='720px' id="myNote" >
+        <tr>
+            <td  class='dataTD' style="font-size:9px;padding-bottom:0px;padding-left:5px;margin:5px;" >* All numbers are for scheduled services.</td>
+        </tr> 
+        <tr>
+            <td  class='dataTD' style="font-size:9px;padding-bottom:0px;padding-left:5px;margin:5px;" >* Most recent three months of international data by airport and by carrier withheld 
+            because of confidentiality agreements for individual routes. Summary totals are shown for all airports and all carriers. Foreign point-to-point totals not included. For U.S. carrier summary system and international numbers including foreign point-to-point and the foreign point-to-point totals, see <a href="http://www.bts.gov/press_releases/airline_traffic_data.html">BTS monthly air traffic press releases</a>
+			</td>
+        </tr>
+     </table>
+     
+     <table id="tblNote" border="0" style="width:750px;">
+	<tr>
+		<td class="dataTD" style="font-size:9px;padding-bottom:0px;padding-left:5px;margin:5px;">
+                  * Domestic and international data based on World Area Codes, a numerical code for each country and each U.S. state (T-100 database), rather than Domestic, Atlantic, Latin and Pacific regional geographic entities (T-1 database).
+              </td>
+	</tr>
+</table>
+     
+     <table id="tblNote2" border="0" style="width:750px;">
+	<tr>
+		<td class="dataTD" style="font-size:9px;padding-bottom:0px;padding-left:5px;margin:5px;">
+                  * Jan. 2012: Atlantic Southeast (EV) and ExpressJet (XE) started to report jointly as ExpressJet (EV). Data for the airlines may be found by clicking on U.S. Carriers ($20M revenue/yr). Clicking on ExpressJet Airlines Inc. (EV) will retrieve Atlantic Southeast (EV) data through December 2011 and the combined ExpressJet (EV) data beginning January 2012. Selecting ExpressJet Airlines Inc. (1) (XE) will retrieve ExpressJet (XE) data through December 2011.
+              </td>
+	</tr>
+</table>
+	 
+     <table Width='750px'>
+     <tr>
+     	<td  Class='dataTD' style="font-size:9px;">
+        * Beginning in October 2002, monthly data reports were expanded to include data for carriers that fly aircraft with 60 seats or less or having a payload capacity of 18,000 lbs. or less, as well as domestic all-cargo carriers.  For previous months, see <a href='http://www.transtats.bts.gov/Tables.asp?DB_ID=111&DB_Name=Air%20Carrier%20Statistics%20%28Form%2041%20Traffic%29-%20All%20Carriers&DB_Short_Name=Air%20Carriers'>T-100</a> for U.S. carrier, foreign carrier and individual airport passenger and flight data.
+     	</td>
+     </tr>
+     </table>
+     
+	 <table width="750px">
+	 	<tr>
+			<td align=right>
+				<input type="submit" name="btnDownLoad" value="Download" id="btnDownLoad" style="font-weight:bold;height:30px;width:100px;font-size:10pt;text-align:center;" />
+			</td>
+		</tr>
+		<tr><td height="5px"></td></tr>
+	 </table>
+	 
+            	    
+        <a id="Link_Passengers" class="dataTD" href="javascript:__doPostBack('Link_Passengers','')">Passengers</a>
+		&nbsp;<a id="Link_Flights" disabled="disabled" class="dataTD">Flights</a>
+        &nbsp;<a id="Link_RPM" class="dataTD" href="javascript:__doPostBack('Link_RPM','')">Revenue Passenger-Miles</a>
+        &nbsp;<a id="Link_ASM" class="dataTD" href="javascript:__doPostBack('Link_ASM','')">Available Seat-Miles</a>
+        &nbsp;<a id="Link_LoadFactor" class="dataTD" href="javascript:__doPostBack('Link_LoadFactor','')">Load Factor</a>
+        &nbsp;<a id="Link_Operating_PL" class="dataTD" href="javascript:__doPostBack('Link_Operating_PL','')">Net Income</a>
+        &nbsp;<a id="Link_Operating_R" class="dataTD" href="javascript:__doPostBack('Link_Operating_R','')">Operating Revenue</a>
+		
+		<table class="dataTDRight" cellspacing="1" cellpadding="4" rules="all" border="1" id="DataGrid1" style="width:750px;">
+	<tr class="libraryTHY2_Center" style="color:White;background-color:#5D95C9;">
+		<td>Year</td><td>Month</td><td>DOMESTIC</td><td>INTERNATIONAL</td><td>TOTAL</td>
+	</tr><tr class="dataTDRight">
+		<td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">2002</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">10</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">815,489</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">92,565</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">908,054</td>
+	</tr><tr class="dataTDRight" style="background-color:#EFEFEF;">
+		<td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">2002</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">11</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">766,775</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">91,342</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">858,117</td>
+	</tr><tr class="dataTDRight">
+		<td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">2002</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">12</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">782,175</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">96,881</td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;">879,056</td>
+	</tr><tr class="dataTDRight" style="background-color:LightYellow;">
+		<td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;"><B>2002</B></td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;"><B>TOTAL</B></td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;"><B>8,085,083</B></td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;"><B>1,023,994</B></td><td style="font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;"><B>9,109,077</B></td>
+	</tr><tr class="dataTDRight">
+		
+	</tr>
+</table>
+        <span id="LblRecord" style="display:inline-block;width:500px;text-align:left;font-weight:800;font-size:12pt;font-family : arial;"></span>
+        <span id="lblUnit" class="dataTD"></span>   
+        <span id="lblSource" class="dataTD"><BR>SOURCE: Bureau of Transportation Statistics T-100 Segment data.</span>           
+    </form>
+ 
+</td>
+</tr>
+
+</table>
+
+
+
+     <!--====== BEGINNING OF FOOTER =========-->
+</div><div id="bottomGrayLine" class="bottomLine"></div><div id="bottomRightGrayCorner" class="bottomCorners"></div>
+<div id="bottomLeftGrayCorner" class="bottomCorners"></div>
+<br />
+<div id="footerContainer" align="center">
+  <div class="footerblack">
+  <a href="http://www.rita.dot.gov">Research and Innovative Technology Administration (RITA)</a> &bull; <a href="http://www.dot.gov/">U.S. Department of Transportation (US DOT)</a><br />
+  1200 New Jersey Avenue, SE &bull; Washington, DC 20590 &bull; 800.853.1351 &bull; <a href="http://ntl.custhelp.com/cgi-bin/ntl.cfg/php/enduser/ask.php">E-mail  RITA</a><br />
+ <br />
+  <a href="http://www.rita.dot.gov/accessibility.html">Accessibility</a> |
+  <a href="http://www.rita.dot.gov/disclaimer.html">Disclaimer</a> |
+  <a href="http://fastlane.dot.gov/">Fast Lane</a> |
+  <a href="http://www.fedstats.gov/">FedStats</a> |
+  <a href="http://www.rita.dot.gov/freedom_of_information_act/">Freedom of Information Act</a> |
+  <a href="http://www.dotcr.ost.dot.gov/asp/nofear.asp">No  FEAR Act</a> |
+  <a href="http://www.oig.dot.gov/Hotline">OIG Hotline</a> |
+  <a href="http://www.rita.dot.gov/privacy.html">Privacy Policy</a> |
+  <a href="http://www.rita.dot.gov/rss/">RSS</a> |
+  <a href="http://www.rita.dot.gov/site_map.html">Site Map</a> |
+  <a href="http://www.usa.gov/" title="You are leaving DOT">USA.gov</a> |
+  <a href="http://www.whitehouse.gov/" title="You are leaving DOT">White House</a> |
+  <a href="http://www.rita.dot.gov/wireless/">Wireless</a></div>
+ <br />
+
+<div class="footerblacksmall">Plug-ins:
+ <a href="http://www.adobe.com/products/acrobat/readstep2_allversions.html" title="You are leaving DOT">PDF  Reader</a> |
+ <a href="http://www.macromedia.com/shockwave/download/alternates/" title="You are leaving DOT">Flash  Player</a> |
+ <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=1cd6acf9-ce06-4e1c-8dcf-f33f669dbc3a&DisplayLang=en" title="You are leaving DOT">Excel  Viewer</a> |
+ <a href="http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=048dc840-14e1-467d-8dca-19d2a8fd7485" title="You are leaving DOT">PowerPoint  Viewer</a> |
+ <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=3657CE88-7CFA-457A-9AEC-F4F827F20CAC&DisplayLang=en" title="You are leaving DOT">Word  Viewer</a> |
+ <a href="http://www.winzip.com/prodpagewz.htm" title="You are leaving DOT">WinZip</a>
+</div>
+    <br />
+ <div class="footerblacksmall">RITA's privacy policies and procedures do not necessarily apply to external web sites.<br />
+  We suggest contacting these sites directly for information on their data collection and distribution policies.</div>
+ </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

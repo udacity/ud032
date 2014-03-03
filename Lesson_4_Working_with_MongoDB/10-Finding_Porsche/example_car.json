@@ -1,0 +1,15 @@
+{
+	"layout" : "rear mid-engine rear-wheel-drive layout",
+	"name" : "Porsche Boxster",
+	"productionYears" : [ ],
+	"modelYears" : [ ],
+	"bodyStyle" : "roadster",
+	"assembly" : [
+		"Finland",
+		"Germany",
+		"Stuttgart",
+		"Uusikaupunki"
+	],
+	"class" : "sports car",
+	"manufacturer" : "Porsche"
+}
