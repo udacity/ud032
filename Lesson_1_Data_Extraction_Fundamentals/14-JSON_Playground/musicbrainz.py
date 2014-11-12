@@ -41,9 +41,9 @@ def main():
     results = query_by_name(ARTIST_URL, query_type["simple"], "Nirvana")
     pretty_print(results)
 
-    artist_id = results["artist"][1]["id"]
+    artist_id = results["artists"][1]["id"]
     print "\nARTIST:"
-    pretty_print(results["artist"][1])
+    pretty_print(results["artists"][1])
 
     artist_data = query_site(ARTIST_URL, query_type["releases"], artist_id)
     releases = artist_data["releases"]
