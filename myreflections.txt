@@ -1,0 +1,10 @@
+
+Definition: Data Wranggling is definitely a very important step for data analysis which usually takes a lot of time as well. Some claim that data wrangling is the most important step in data analysis because without a clean data you can never rely on your analysis.
+
+There are couple of things that you have to check during data cleansing process.
+
+Data Quality CheckList: Check list for data wrangling: validity, uniformity, consistency, accuracy and completeness.
+
+Do you know the definition for each of those terms?
+Consistency: Data in interdependent tables should be consistent with each other.
+Uniformity: data in the same column use the same unit of measure.
