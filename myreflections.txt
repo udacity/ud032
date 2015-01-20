@@ -1,0 +1,1 @@
+Data wranggling is definitely a very important step for data analysis which usually takes a lot of time as well. Some claim that data wrangling is the most important step in data analysis because without a clean data you can never rely on your analysis.
