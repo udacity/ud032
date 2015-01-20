@@ -6,3 +6,5 @@ There are couple of things that you have to check during data cleansing process.
 Data Quality CheckList: Check list for data wrangling: validity, uniformity, consistency, accuracy and completeness.
 
 Do you know the definition for each of those terms?
+Consistency: Data in interdependent tables should be consistent with each other.
+Uniformity: data in the same column use the same unit of measure.
