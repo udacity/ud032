@@ -45,7 +45,7 @@ def process_file(f):
     
     with open("{}/{}".format(datadir, f), "r") as html:
 
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(html, "lxml")
 
     return data
 

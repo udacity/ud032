@@ -11,7 +11,7 @@ def extract_airports(page):
     data = []
     with open(page, "r") as html:
         # do something here to find the necessary values
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(html, "lxml")
 
     return data
 
